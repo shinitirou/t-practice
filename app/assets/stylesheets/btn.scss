@@ -1,0 +1,56 @@
+// 赤ボタン
+@mixin btn-red{
+  background: red;
+  border: 1px solid red;
+  color: #fff;
+}
+
+@mixin btn-blue{
+  background: blue;
+  border: 1px solid blue;
+  color: #fff;
+}
+
+@mixin btn-base{
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+@mixin hover-anm{
+  transition: all ease-out .3s;
+  text-decoration: none;
+}
+
+.btn{
+  &-default{
+    display: block;
+    width: 100%;
+    line-height: 48px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all ease-out .3s;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  &-disabled{
+    cursor: default;
+    border: 1px solid #888;
+    background: #888;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  &-serious{
+    font-weight: bold;
+  }
+
+  &-small{
+    padding: 4px 6px;
+    border-radius: 3px;
+  }
+}

@@ -1,0 +1,32 @@
+.header
+  .header__search
+    = link_to '#' do
+      %i.fa.fa-calendar
+        日付で検索
+    = link_to '#' do
+      %i.fa.fa-map-marker
+        場所で検索
+    
+
+
+  .mypage_nav
+    = link_to "#", class: 'mypage_link' do
+      = image_tag 'member_photo_noimage_thumb.png', class: "myimage",alt:'', width: '32'
+      %span マイページ
+
+-#     .header__search
+-#       = search_form_for @q, url: search_items_path, class: 'header__form' do |f|
+-#         = f.text_field :name_cont, class: 'header__form__input', placeholder: 'なにかお探しですか？'
+-#         = button_tag type: 'submit', class: 'header__form__icon' do
+-#           %i.fa.fa-search
+-#     %ul.header__navigation
+-#       %li#category-menu.category-menu
+-#         = link_to '#' do
+-#           %i.fa.fa-list.navigation-icon
+-#           %span カテゴリーから探す
+-#       %li#brand-menu.category-menu
+-#         = link_to '#' do
+-#           %i.fa.fa-tag.navigation-icon
+-#           %span ブランドから探す
+-# - unless controller.controller_name == "items" || controller.controller_name == "exhibit"
+-#   = render 'shared/breadcrumb'
